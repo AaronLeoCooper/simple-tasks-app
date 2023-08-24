@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { expect, it } from "vitest";
 import { TasksOverview } from "./TasksOverview";
-import { mockTasks } from "./tasksData";
+import { mockTasks } from "./mockTasksData";
 
 it("should display all tasks", () => {
   render(<TasksOverview tasks={mockTasks} />);

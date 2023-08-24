@@ -4,6 +4,7 @@ import { Task } from "./type";
 
 const now = new Date();
 
+// TODO: figure out why this turns into array of array..
 export const tasksAtom = atom<Task[]>([
   {
     id: "1",
