@@ -32,6 +32,8 @@ pnpm test
 
 ## Notes and ideas
 
+> I got on about some issues below about Jotai giving me some weird outputs. Guess what? it was human error all along as I used the wrong hook! I should have used `useAtomValue` instead of `useAtom`, that way it would have been `tasks` and not `[tasks, setTasks]`. I'm really kicking myself now!!
+
 These are some notes taken after building the app to its current state.
 
 - Fun little task to do in 50 (and a bit) minutes! A lot more preferable to spending hours on building an entire app that's completely throwaway.
