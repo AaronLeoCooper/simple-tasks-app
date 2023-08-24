@@ -13,12 +13,15 @@ export function Tasks() {
   };
 
   return (
-    <div>
-      <TasksOverview tasks={tasks} />
-      <TasksTable
-        tasks={tasks}
-        toggleTaskCompletion={handleToggleTaskCompletion}
-      />
+    <div className="p-5">
+      <h1 className="text-3xl font-bold border-b-2 pb-2 mb-10">Your tasks</h1>
+      <div className="flex flex-col items-center gap-5">
+        <TasksOverview tasks={tasks} />
+        <TasksTable
+          tasks={tasks}
+          toggleTaskCompletion={handleToggleTaskCompletion}
+        />
+      </div>
     </div>
   );
 }
